@@ -1,0 +1,25 @@
+{
+    "name": "android16-arm64",
+    "target": "linux/arm64",
+    "http": ":56901",
+    "workdir": "/path/to/workdir",
+    "kernel_obj": "/path/to/images",
+    "kernel_src": "/path/to/souce_code",
+    "syzkaller": "/path/to/tool",
+    "image": "/path/to/images/rootfs.ext4",
+    "sshkey": "/root/android_fuzz/bullseye.id_rsa",
+    "procs": 2,
+    "reproduce": true,
+    "type": "qemu",
+    "vm": {
+      "count": 2,
+      "qemu": "/path/to/qemu-system-aarch64",
+      "cmdline": "rw init=/sbin/init ip=dhcp",
+      "kernel": "/path/to/images/Image",
+      "cpu": 2,
+      "mem": 2048,                                          
+      "qemu_args": "-machine virt -cpu cortex-a57"
+    }
+  }
+  
+  
