@@ -216,7 +216,7 @@ Ubuntu 20.04.4 LTS
 We use four AOSP kernel versions(Android 16-6.12, Android 15-6.6, Android 14-6.1, and Android 14-5.15), Xiaomi HyperOS, and Huawei OpenHarmony as fuzzing targets. All kernel versions were compiled with the same configuration, with both KCOV and KASAN enabled, to collect coverage data and detect memory errors. For KCSAN experiments, identical settings were used in both baseline and experimental groups to ensure fairnes
 
 ### Coverage Over 24h
-![image-20260113004943545](.\imgs\image-20260113004943545.png)
+![image-20260113004943545](./imgs/image-20260113004943545.png)
 
 
 ### New Bug Found
